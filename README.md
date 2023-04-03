@@ -1,11 +1,11 @@
 # pass2keepass
 
-Command line application for converting Linux password-store (pass) files to a single kbdx file, compatible with Keepass and its variants.
+Command line application for converting UNIX password-store (pass) files to a single kbdx file, compatible with KeePass and its variants.
 
 ## Dependencies
 
-[pykeepass](https://github.com/libkeepass/pykeepass)
-[python-gnupg](https://github.com/vsajip/python-gnupg)
+[pykeepass](https://github.com/libkeepass/pykeepass)  
+[python-gnupg](https://github.com/vsajip/python-gnupg)  
 
 ## Usage
 
