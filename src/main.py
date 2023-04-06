@@ -30,6 +30,10 @@ def main():
 
         # Fim da execução
         print(Fore.GREEN + "DONE" + Style.RESET_ALL)
+    except ValueError as e:
+        print(Fore.RED + "ERROR" + Style.RESET_ALL)
+        print(str(e))
+
     except Exception:
         print(Fore.RED + "ERROR" + Style.RESET_ALL)
         traceback.print_exc(file=sys.stdout)
