@@ -1,6 +1,8 @@
+#!/bin/python3
 # Main file
 from utils.gpg import get_file_list, generate_password_list
 from utils.keepass import add_multiple_entries
+
 from dotenv import load_dotenv
 from os import getenv
 from colorama import Fore, Style

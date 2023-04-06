@@ -6,7 +6,12 @@ import os
 def get_file_list(folder : str) -> [str]:
     collection = []
     info = {}
-    dirs = os.scandir(path=folder)
+
+    # Checks if folder is valid and find all files
+    if os.path.isdir(folder):
+        dirs = os.scandir(path=folder)
+    else:
+        raise ValueError("[ERROR] Selected path is not a valid directory!")
     seen_list = []
 
     for obj in dirs:
@@ -36,6 +41,8 @@ def get_file_list(folder : str) -> [str]:
                         'path': path,
                     }
                     collection.append(info)
+    if len(collection) == 0:
+        raise ValueError("[ERROR] No gpg files were found! Specify a valid password store")
     return collection
                     
             
